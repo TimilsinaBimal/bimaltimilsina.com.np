@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="header-color"></div>
-    <div class="intro">
+    <div id="particles-js"></div>
+    <div  class="intro align-middle">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10 col-sm-11 myCard">
+                <div class="col-lg-8 col-md-10 col-sm-11 myCard " data-tilt>
                     <div class="row justify-content-center">
                         <div class="col-md-6 col-lg-6 col-sm-10">
                             <img class="img-fluid" src="bimal.jpg" alt="Bimal Timilsina">
@@ -67,6 +67,14 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="particles.min.js"></script>
+    <script src="tilt.jquery.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
     </script>
 
 </body>

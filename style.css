@@ -3,7 +3,7 @@
 /* ROOT PROPERTIES */
 
 :root {
-	--main-bg-gradient: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+	--main-bg-background: linear-gradient(to right, #29ffc6c0, #20e3b2c0, #0cebebc0);
 	--primary: #29ffc6;
 	--shadow: #ddd;
 	--white: #fff;
@@ -20,7 +20,7 @@ body {
 	margin: 0 auto;
 	font-family: "Poppins", sans-serif;
 	word-break: normal;
-	background: #e8e8e8;
+	background: var(--main-bg-background);
 }
 
 h1,
@@ -60,7 +60,7 @@ button {
 }
 
 /*=========================================================================
- anchor tag 
+ anchor tag
  ========================================================================*/
 a {
 	text-decoration: none;
@@ -77,6 +77,10 @@ a:hover {
 
 /* HEADER */
 
+#particles-js {
+	height: 100%;
+}
+
 .header-color {
 	background: var(--main-bg-gradient);
 	height: 60%;
@@ -88,8 +92,8 @@ a:hover {
 	box-shadow: 0.2em 0.2em 1em var(--shadow);
 	background-color: var(--white);
 	padding: 1.5em;
-	margin-top: -25%;
-	margin-bottom: 3%;
+	margin-top: -46%;
+	margin-bottom: 4.9%;
 }
 
 .intro img {
@@ -101,10 +105,12 @@ a:hover {
 	.intro .myCard {
 		margin-top: -10%;
 	}
+
 	.header-color {
 		height: 10%;
 	}
 }
+
 .intro span {
 	font-size: 1em;
 	text-transform: uppercase;
