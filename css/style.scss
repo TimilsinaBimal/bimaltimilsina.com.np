@@ -123,7 +123,6 @@ a:hover {
     width: 70%;
 }
 
-
 #nav {
     font-family: $font-monospace;
     padding-top: 2em;
@@ -267,6 +266,7 @@ a:hover {
 
     #header-section {
         padding-bottom: 2em;
+
         .name-section {
             .heading--1 {
                 font-size: 2em;
@@ -355,6 +355,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
     #contact-about {
         padding: 2em 0;
+
         .about-sec {
             .skills {
                 width: 100%;
