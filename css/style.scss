@@ -1,6 +1,6 @@
 @import "./bootstrap/bootstrap.scss";
 $colors: ("secondary": #6f75e4,
-    "primary": #06d6a0,
+    "primary": #64ffda,
     "dark-1": #001233,
     "dark-cards": #142442,
     "dark-2": #1F2632,
@@ -11,7 +11,7 @@ $colors: ("secondary": #6f75e4,
     "gray": #999aa2,
     "white": #fff,
     "black": #000,
-);
+    "hover": #64ffdb7a);
 $font-monospace: "Roboto Mono",
 monospace;
 $font-regular: "Inter",
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .button:hover {
-    background: color(primary);
+    background: color(hover);
     color: color("white");
 }
 
@@ -141,24 +141,34 @@ a:hover {
     .nav-item {
         font-weight: 500;
         margin: auto 0.8em;
-        font-size: 1.3em;
+        font-size: 1em;
         text-transform: capitalize;
         vertical-align: center;
 
         a {
             color: color(font-2);
+            text-decoration: none;
         }
+
+        a.button {
+            padding: .4em .8em;
+        }
+
     }
 
     .nav-item a:hover,
     .nav-item a.active {
-        color: color("white");
+        color: color("primary");
     }
 
     .nav-item a:active {
         a::after {
             content: ".";
         }
+    }
+
+    a.button:hover {
+        color: color("white");
     }
 
     label {
@@ -236,7 +246,7 @@ a:hover {
         .heading--1 {
             font-size: 5em;
             font-weight: 600;
-            color: color("white");
+            color: #bde0fe;
         }
 
     }
