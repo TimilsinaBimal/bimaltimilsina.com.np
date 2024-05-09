@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://bimaltimilsina.com.np/sitemap.xml
