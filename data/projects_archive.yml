@@ -1,0 +1,33 @@
+- name: Toxicity Classification 
+  year: 2023
+  company: Otermans Institute
+  skills: 
+    - PyTorch
+    - Transformers
+    - Python
+    - FastAPI
+  link: https://github.com/TimilsinaBimal/Toxicity-classification
+  alias: Toxicity Classification 
+
+
+- name: Background Blurring with Image Segmentation
+  year: 2021
+  company: Kathmandu University
+  skills:
+    - Python
+    - Tensorflow
+    - Flask
+  link: https://github.com/TimilsinaBimal/Blurring-Image-Background-Using-Image-Segmentation
+  alias: Background Blurring with Image Segmentation
+
+
+- name: Bookamender
+  year: 2020
+  company: Kathmanu University
+  skills: 
+    - Python
+    - scikit-learn
+    - pandas
+    - FastAPI
+  link: https://github.com/TimilsinaBimal/Bookamender
+  alias: Bookamender

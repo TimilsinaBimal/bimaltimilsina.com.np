@@ -1,0 +1,9 @@
+- name: Background Blurring with Image Segmentation
+  description: This project uses Image Segmentation algorithms to find background and foreground of any image containing person and Blurs the background to give image nice potrait look.
+  image: blistabloc/blistabloc.png
+  url : https://blistabloc.com/
+
+- name: Neural Style Transfer
+  description: Implementation of Neural Style Transfer Algoritm to copy style of any image to another content Image which finally outputs a nice styled Image.
+  image: blistabloc/blistabloc.png
+  url : https://blistabloc.com/
