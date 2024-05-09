@@ -1,5 +1,2 @@
-bootstrap/
-*.css.map
-style.css
 node_modules/
 public/
