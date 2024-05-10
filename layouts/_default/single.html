@@ -45,7 +45,20 @@
                         </div>
                     </div>
                 </article>
+                <div class="flex justify-between gap-2 flex-wrap py-5 mt-5">
+                    <div class="tags">
+                        {{ range .Params.Tags}}
+                        <a class="bg-slate-400 rounded-md px-3 py-2 mr-2 text-sm font-semibold text-black hover:bg-slate-500 hover:transition-all "
+                            href="{{ site.BaseURL  }}tags/{{. | urlize}}"> <span>#{{.}}</span></a>
+                        {{end}}
+                    </div>
+
+
+                    <p class="text-right">Last Updated: {{.Lastmod.Format "06 Jan, 2006"}}</p>
+                </div>
+
             </div>
+
             {{partial "site/article_footer.html" $.Site.Data}}
             <button id="to-top-button" onclick="scrollToTop()" title="Go To Top"
                 class="hidden fixed z-50 bottom-10 right-10 lg:bottom:20 lg:right:20 sm:bottom:5 sm:right:5 md:bottom:5 md:right:5 p-3 border-0 w-11 h-11 rounded-full shadow-md bg-teal-300 hover:bg-teal-500 text-white text-lg font-semibold transition-colors duration-300">
