@@ -369,7 +369,7 @@ While, Minimum and maximum value works, sometimes we may see outliers that affec
 Based on when to quantize the model weights, quantization can be thought as two modes:
 
 ### 1. Post-Training Quantization (PTQ)
-In Post-Training quantization or PTQ, we quantize the weights of already trained model. This is straightforward and easy to implement, however it may degread the performance of model slihtly due to the loss of precision in the value of weights.   
+In Post-Training quantization or PTQ, we quantize the weights of already trained model. This is straightforward and easy to implement, however it may degred the performance of model slightly due to the loss of precision in the value of weights.   
 To better calibrate the model, model's weight and activations are evaluated on a representative dataset to determine the range of values (alpha, beta, scale, and zero-point) taken by these parameters. We then use these parameters to quantize the model.
 
 Based on the methods of quantization, we can further divide PTQ into three categories:

@@ -5,10 +5,17 @@
         </h2>
     </div>
     <div>
-        {{range .background}}
-        <p class="mb-4">
-            {{.item | safeHTML}}
+        {{$length := sub (len .background) 1}}
+        {{range $index, $item := .background}}
+        {{if eq $index $length}}
+        <p>
+            {{$item.item | safeHTML | emojify}}
         </p>
+        {{else}}
+        <p class="mb-4">
+            {{$item.item | safeHTML | emojify}}
+        </p>
+        {{end}}
         {{end}}
     </div>
 </section>
