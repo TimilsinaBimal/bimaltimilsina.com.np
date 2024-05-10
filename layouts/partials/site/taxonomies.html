@@ -1,12 +1,12 @@
 {{ $categories := site.Taxonomies.categories }}
 
-<section class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Blog posts">
+<section class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
     <div>
         <div class="flex justify-right gap-2 flex-wrap py-5 mt-5">
             {{ range .Data.Terms}}
-            <a class="bg-teal-500 rounded-md px-3 py-2 mr-2 mb-2 text-sm font-semibold text-white hover:bg-teal-700 hover:transition-all "
+            <a class="bg-teal-400/20 rounded-full px-3 py-2 mr-2 mb-2 text-sm font-medium text-teal-400 hover:bg-teal-700 hover:text-white hover:transition-all "
                 href="{{ .Page.RelPermalink }}"> <span>{{.Page.Title}}</span><span
-                    class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-black bg-blue-100 rounded-full">
+                    class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-black bg-teal-100 rounded-full">
                     {{.Count}}
                 </span></a>
 
