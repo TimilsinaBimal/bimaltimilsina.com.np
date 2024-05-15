@@ -7,7 +7,7 @@ description: "Recurrent Neural Networks (RNNs) are specialized neural networks c
 type: post
 thumbnail: rnn.jpeg
 categories:
-- "NLP"
+- "Natural Language Processing"
 ---
 ## Introduction
 

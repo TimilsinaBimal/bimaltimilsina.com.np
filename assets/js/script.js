@@ -105,3 +105,13 @@ addEventListener("mousemove", (evt) => {
     background = `radial-gradient(600px at ${$(document).scrollLeft() + evt.clientX}px ${$(document).scrollTop() + evt.clientY}px, rgba(29, 78, 216, 0.20), transparent 80%)`
     elPointer.style.setProperty("--bg-gradient", background);
 });
+
+
+window.addEventListener("scroll", function () {
+    const scrollableHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    const progressBar = document.getElementById("scroll-progress");
+    const progress = (scrolled / scrollableHeight) * 100;
+    progressBar.style.width = progress + "%";
+});
