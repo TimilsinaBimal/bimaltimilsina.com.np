@@ -105,9 +105,9 @@ pre {
     text-underline-offset: .4em
 }
 
-code {
+/* code {
     text-wrap: wrap;
-}
+} */
 
 a[aria-label="Anchor"] {
     display: none;
