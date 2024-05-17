@@ -2245,9 +2245,9 @@ pre {
   text-underline-offset: .4em
 }
 
-/* code {
-    text-wrap: wrap;
-} */
+code {
+  text-wrap: wrap;
+}
 
 a[aria-label="Anchor"] {
   display: none;
