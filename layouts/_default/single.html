@@ -28,7 +28,7 @@
                             </div>
                         </header>
                         <div
-                            class="prose prose-invert md:prose-lg article prose-headings:font-semibold mt-6 prose-headings:text-white prose-a:text-underline prose-a:underline-offset-2 transition-all">
+                            class="prose prose-invert md:prose-lg article prose-headings:font-semibold mt-6 prose-headings:text-white prose-a:text-underline prose-a:underline-offset-2 transition-all prose-figure:object-center">
                             {{ if .Params.cover}}
                             <img src="{{.Params.cover}}" alt="">
 
@@ -47,7 +47,7 @@
                         {{end}}
                     </div>
 
-                    <p class="text-right text-md">Last Updated: {{.Lastmod.Format "06 Jan, 2006"}}</p>
+                    <p class="text-right text-md">Last Updated: {{.Lastmod.Format "02 Jan, 2006"}}</p>
                 </div>
                 {{partial "site/article_footer.html" $.Site.Data}}
                 <button id="to-top-button" onclick="scrollToTop()" title="Go To Top"
