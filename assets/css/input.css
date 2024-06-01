@@ -5,6 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @font-face {
+    font-family: "Computer Math";
+    src: url("/fonts/cmunti.ttf") format('truetype');
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+
+@font-face {
     font-family: Geist;
     src: url("/fonts/GeistVF.woff2") format('woff2'),
         url("/fonts/GeistVF.woff") format('woff'),
@@ -21,6 +31,10 @@
         url("/fonts/GeistMonoVF.ttf") format('truetype');
     font-weight: 100 900;
     font-display: swap;
+}
+
+.katex .mathnormal {
+    font-family: "Computer Math";
 }
 
 .font-sans {

@@ -7,6 +7,7 @@ description: "Quantization, the process of reducing model size by converting par
 type: post
 categories: ["Large Language Models"]
 thumbnail: quantization.jpeg
+featured: true
 ---
 
 ## Introduction

@@ -1,0 +1,58 @@
+<section id="writing" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Blog posts">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-24">
+        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Params.type" "post") }}
+        {{ range $paginator.Pages }}
+        {{ if .Params.featured }}
+        <a href="{{.RelPermalink}}"
+            class="col-span-1 md:col-span-3 grid-row  grid grid-cols-1 md:grid-cols-6 rounded-3xl p-6 gap-6 group relative transition-all hover:shadow-post bg-slate-800/50 shadow-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg transform hover:-translate-y-1 hover:shadow-po">
+            <div class="flex flex-col lg:flex-row md:gap-6 col-span-1 md:col-span-6 lg:col-span-6">
+                <div
+                    class="h-auto mb-6 md:mb-0 w-full lg:w-1/2 transition-colors group-hover:text-blurple text-gable-green">
+                    <div class="image-container padding-14%">
+                        <img class="block self-center rounded-3xl" src="/img/lora/1695672238737.png" alt=""
+                            style="box-sizing:border-box;padding:0;border:none;margin:auto;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover">
+                    </div>
+                </div>
+                <div id="wrapper"
+                    class="mt-0 2xl:mt-6 col-span-1 md:col-span-3 lg:col-span-3 w-full lg:w-1/2 align-middle">
+                    <div class="text-gray-600 mb-2">{{.Date.Format "Jan 02, 2006"}}</div>
+                    <h4 class="text-2xl md:text-2xl lg:text-2xl mb-2 lg:mb-6">{{.Title}}
+                    </h4>
+                    <div class="max-h-28 mt-2 text-base overflow-hidden  relative transition-colors mb-8">
+                        {{.Params.description}}
+                    </div>
+
+                </div>
+            </div>
+        </a>
+        {{else}}
+        <a href="{{.RelPermalink}}"
+            class="col-span-1 grid grid-cols-1 rounded-3xl p-6 gap-6 group relative transition-all bg-slate-800/50 shadow-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg transform hover:-translate-y-1 hover:shadow-po">
+            <div class="col-span-1">
+                <div class="transition-colors">
+                    <div class="image-container padding-14% h-28">
+                        <img class="block self-center rounded-3xl" src="/img/lora/1695672238737.png" alt=""
+                            style="box-sizing:border-box;padding:0;border:none;margin:auto;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover">
+                    </div>
+
+                </div>
+                <div id="wrapper" class="col-span-1 py-5">
+                    <div class="text-slate-200 mb-2">{{.Date.Format "Jan 02, 2006"}}</div>
+                    <h4 class="text-2xl text-slate-200">{{.Title}}</h4>
+                    <div
+                        class="max-h-14 mt-2 text-base overflow-hidden text-slate-200 relative transition-colors  mb-8">
+                        {{.Params.description}}<div class="w-full bottom-0 ">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </a>
+        {{end}}
+        {{ end }}
+
+    </div>
+    <div class="pagination mt-6">
+        {{partial "site/pagination.html" $paginator}}
+    </div>
+</section>

@@ -6,7 +6,7 @@ theme = "congo"
 title = 'Bimal Timilsina'
 enableRobotsTXT = true
 summaryLength = 15
-paginate = 20
+paginate = 7
 
 [markup]
   [markup.highlight]
