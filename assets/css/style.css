@@ -1484,6 +1484,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1607,6 +1611,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-3xl {
@@ -3069,6 +3077,32 @@ a[aria-label="Anchor"] {
   text-underline-offset: 2px;
 }
 
+.prose-blockquote\:border :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  border-width: 1px;
+}
+
+.prose-blockquote\:border-none :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  border-style: none;
+}
+
+.prose-blockquote\:text-left :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  text-align: left;
+}
+
+.prose-blockquote\:text-center :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  text-align: center;
+}
+
+.prose-blockquote\:text-xl :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose-blockquote\:text-2xl :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .prose-figure\:object-center :is(:where(figure):not(:where([class~="not-prose"] *))) {
   -o-object-position: center;
      object-position: center;
@@ -3501,6 +3535,11 @@ a[aria-label="Anchor"] {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-gray-700:hover {
