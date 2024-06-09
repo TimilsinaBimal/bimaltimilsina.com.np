@@ -98,11 +98,11 @@ Similarly, float16 or FP16 allocates 1 bit for sign but just  5 bits for exponen
 
 
 
-![FP32](/img/quantization/floating1.png "FP 32 or Float32")
+![FP 32 or Float32](/img/quantization/floating1.png "FP 32 or Float32")
 
-![FP32](/img/quantization/fp16.png "FP 16 or Float16" )
+![FP 16 or Float16](/img/quantization/fp16.png "FP 16 or Float16" )
 
-![FP32](/img/quantization/bfloat16.png "BFLOAT16")
+![BFLOAT16](/img/quantization/bfloat16.png "BFLOAT16")
 
 
 So, in short the conversion from a higher memory format to a lower memory format is called quantization. Talking in deep learning terms, Float32 is referred to as **single or full precision** and  Float16 and BFloat16 are called **half precision**. The default way in which deep learning models are trained and stored is in **full precision**. The most commonly used conversion is from full precision to an int8 and int4 format.
