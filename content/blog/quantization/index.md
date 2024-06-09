@@ -6,7 +6,9 @@ author: "Bimal Timilsina"
 description: "Quantization, the process of reducing model size by converting parameters to lower precision, addresses the challenges posed by large neural network models, particularly in deployment. This article explores the necessity of quantization, its methodologies like asymmetric and symmetric approaches, and the distinction between Post-Training Quantization (PTQ) and Quantization-Aware Training (QAT)."
 type: post
 categories: ["Large Language Models"]
-thumbnail: quantization.jpeg
+thumbnail: cover.jpg
+cover: cover.jpg
+caption: Quantizaton Representative image (stablediffusionweb.com)
 featured: true
 ---
 
@@ -70,10 +72,10 @@ Computers store numbers in two ways: Unsigned and Signed. A Signed value will st
 
 Let's look an example on how a 8-bit Unsigned integer stored in memory.
 
-| 1 | 0 | 0 | 0 |1 | 0 |0 | 1 |
+| $1$ | $0$ | $0$ | $0$ |$1$ | $0$ |$0$ | $1$ |
 | - | - |- | - |- | - |- | - |
 
-$2^7 + 0 + 0 + 0 + 2^3 + 0 + 0 + 2^0 = 137$
+$2^7 \quad+ \quad 0 \quad+\quad 0 \quad+\quad 0 \quad+ \quad 2^3 \quad+ \quad0 \quad+ \quad0\quad +\quad 2^0\quad = \quad 137$
 
 The range of integers an 8-bit integer can store is calculated as: $range \space [0, 2^n-1] = [0, 255] $ for 8-bit unsisigned integers. This means that, it can only stores values from 0 to 255. If the value lies beside these boundaries, then they will be set as either 0 for smaller and 255 for larger value.
 
@@ -94,17 +96,13 @@ For example, float32 allocates 1 bit for sign, 8 bits for exponent  and 23 bits 
 
 Similarly, float16 or FP16 allocates 1 bit for sign but just  5 bits for exponent and  10 bits for mantissa. On the other hand, BF16 (B stands for Google Brain) allocates 8 bits  for the exponent and just  7 bits for mantissa.
 
-*FP 32 or Float32*
 
-![FP32](/img/quantization/floating1.png)
 
-*FP 16 or Float16*
+![FP32](/img/quantization/floating1.png "FP 32 or Float32")
 
-![FP32](/img/quantization/fp16.png)
+![FP32](/img/quantization/fp16.png "FP 16 or Float16" )
 
-*BFLOAT16*
-
-![FP32](/img/quantization/bfloat16.png)
+![FP32](/img/quantization/bfloat16.png "BFLOAT16")
 
 
 So, in short the conversion from a higher memory format to a lower memory format is called quantization. Talking in deep learning terms, Float32 is referred to as **single or full precision** and  Float16 and BFloat16 are called **half precision**. The default way in which deep learning models are trained and stored is in **full precision**. The most commonly used conversion is from full precision to an int8 and int4 format.
@@ -245,10 +243,8 @@ Quantization Error: 202.06419372558594
 As, we can see there is quite the data loss when quantizing the tensor with Mean Squared error 202.06, which is really high. But we have more optimized methods these days, so the data loss will be really small.
 Also, see how the tensor performs when we dequantize it, we can see huge difference there also.
 
-<figure>
-  <img src="/img/quantization/symmetric_vs_aymmetric.png" alt="Symmetric vs Asymmetric Quantization">
-  <figcaption>Symmetric vs Asymmetric Quantization</figcaption>
-</figure>
+
+![Symmetric vs Asymmetric Quantization](/img/quantization/symmetric_vs_aymmetric.png "Symmetric vs Asymmetric Quantization")
 
 
 ### Symmetric Quantization
