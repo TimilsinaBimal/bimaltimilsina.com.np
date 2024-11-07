@@ -2,7 +2,7 @@
   url: https://oiedu.co.uk/
   time: 2023 - present
   position: Machine Learning Engineer
-  description: Building World’s First AI Digital Human Teacher
+  description: Developed and optimized RAG systems with commercial (GPT-4) and open-source (Llama) LLMs, conducting research, fine-tuning for specific use cases, reducing inference latency on AWS by over 100%, and leading scalable architecture design to support 1000+ concurrent users.
   skills:
     - Large Language Models
     - RAG
@@ -12,7 +12,7 @@
   url: https://rippey.ai/
   time: Feb - July 2023
   position: Machine Learning Engineer
-  description: I helped Logistics industry respond to quote and tracking emails in less than a minute using email automation system along with improving Internal email classification system by 15%
+  description: Enhanced email classification accuracy by 15% with DistilBERT fine-tuning and implemented an email automation system for logistics, reducing response time to under one minute.
   skills:
     - Large Language Models
     - BERT
@@ -22,7 +22,7 @@
   url: https://www.ekbana.com/
   time: 2022 - 2023
   position: Associate NLP Engineer
-  description: Detect and recognize table and cell structure from bordered,partially-bordered and borderless tables. Extract information from Invoices such as invoice no, poid, vendor details, and bill details.  Experiment with different OCR methods to detect and recognize Text in Documents Research on Text-to-Speech in the Nepali Language
+  description: Developed table structure recognition for bordered, partially-bordered, and borderless tables, enabling cell-level data extraction. Built an invoice parser to extract key details like invoice number, PO ID, vendor, and billing information. Experimented with OCR techniques for document text recognition and conducted research on Nepali language Text-to-Speech.
   skills:
     - Natural Language Processing
     - Transformers
