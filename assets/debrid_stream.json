@@ -1,0 +1,22 @@
+[
+     {
+    "name":"T-TV",
+    "url":"https://torrentio.strem.fun/sort=qualitysize%7Cqualityfilter=dolbyvision,480p,other,scr,cam,unknown%7Climit=10%7Cdebridoptions=nodownloadlinks,nocatalog%7Crealdebrid=76MWPAWSWND2HSQ4VKWTXUB4VWZL2IZLI6MBRQ25TSP7V2O3GXFA/stream/series/%imdbId.json",
+    "type":"json_imdb",
+    "imdbType":"tv",
+    "infoHashTargetKey":"infoHash",
+    "itemType":"info_hash",
+    "jsonResultsKey":"streams",
+    "torrentNameTargetKey":"title"
+  },
+  {
+    "name":"T-Movie",
+    "url":"https://torrentio.strem.fun/sort=qualitysize%7Cqualityfilter=dolbyvision,480p,other,scr,cam,unknown%7Climit=10%7Cdebridoptions=nodownloadlinks,nocatalog%7Crealdebrid=76MWPAWSWND2HSQ4VKWTXUB4VWZL2IZLI6MBRQ25TSP7V2O3GXFA/stream/movie/%imdbId.json",
+    "type":"json_imdb",
+    "imdbType":"movie",
+    "infoHashTargetKey":"infoHash",
+    "itemType":"info_hash",
+    "jsonResultsKey":"streams",
+    "torrentNameTargetKey":"title"
+  }
+]
