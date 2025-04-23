@@ -1,6 +1,18 @@
+- company: Insyde AI
+  url: https://insyde.ai/
+  time: 2024 - Present
+  position: Senior Machine Learning Research Engineer
+  description: Lead the development of a large-scale RAG system for a major client, focusing on optimizing the architecture for high concurrency and low latency. Conducted research on LLMs and RAG systems, fine-tuning models for specific use cases, and reducing inference latency on AWS by over 100%. Collaborated with cross-functional teams to integrate machine learning solutions into existing systems.
+  skills:
+    - Large Language Models
+    - RAG
+    - Agent-based Systems
+    
+
+
 - company: Otermans Institute
   url: https://oiedu.co.uk/
-  time: 2023 - present
+  time: 2023 - 2024
   position: Machine Learning Engineer
   description: Developed and optimized RAG systems with commercial (GPT-4) and open-source (Llama) LLMs, conducting research, fine-tuning for specific use cases, reducing inference latency on AWS by over 100%, and leading scalable architecture design to support 1000+ concurrent users.
   skills:
