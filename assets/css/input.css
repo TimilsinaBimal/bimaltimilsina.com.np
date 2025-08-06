@@ -126,3 +126,60 @@ a[aria-label="Anchor"] {
     --tw-text-opacity: 1;
     color: rgb(226 232 240/var(--tw-text-opacity))
 }
+.glass-card {
+    background: transparent;
+    border-radius: 0.75rem;
+    /* 12px */
+    border: 1px solid transparent;
+    padding: 1.5rem;
+    /* p-6 */
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card:hover {
+    background: rgba(30, 41, 59, 0.5);
+    /* slate-800 with 50% opacity */
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.glass-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(350px circle at var(--x) var(--y), rgba(255, 255, 255, 0.1), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.glass-card:hover:before {
+    opacity: 1;
+}
+
+.glass-card:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 40%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    pointer-events: none;
+    opacity: 0;
+    left: var(--x, 50%);
+    top: var(--y, 50%);
+}
+
+.glass-card.active:after {
+    transform: translate(-50%, -50%) scale(8);
+    opacity: 0;
+    transition: transform 0.6s, opacity 0.8s;
+}

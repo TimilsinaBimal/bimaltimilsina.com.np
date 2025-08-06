@@ -1,4 +1,3 @@
-
 // Get all sections that have an ID defined
 const sections = document.querySelectorAll("section[id]");
 
@@ -98,6 +97,22 @@ $(document).ready(function () {
     $("nav#TableOfContents ul li a").addClass("group flex items-center py-3 active")
 });
 
+document.querySelectorAll('.glass-card').forEach(card => {
+    card.addEventListener('mousemove', function (e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        this.style.setProperty('--x', `${x}px`);
+        this.style.setProperty('--y', `${y}px`);
+    });
+
+    card.addEventListener('click', function (e) {
+        this.classList.add('active');
+        setTimeout(() => {
+            this.classList.remove('active');
+        }, 600);
+    });
+});
 
 
 let lastScrollTop = 0;
