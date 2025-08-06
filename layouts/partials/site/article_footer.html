@@ -1,9 +1,9 @@
 <footer class="lg:py-10 sm:py-5">
     <div class="w-full mx-auto py-4 md:flex md:items-center md:text-base md:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center md:text-base font-medium">&copy;2024 <a
-                href="{{site.BaseURL}}"
-                class="underline-offset-2 hover:underline-offset-4 transition-all hover:text-white !no-underline hover:!underline">
-                Bimal Timilsina</a>.
+        <span class="text-sm text-gray-500 sm:text-center md:text-base font-medium">&copy;{{ now.Format "2006" }} <a
+            href="{{site.BaseURL}}"
+            class="underline-offset-2 hover:underline-offset-4 transition-all hover:text-white !no-underline hover:!underline"></a>
+            Bimal Timilsina</a>.
         </span>
         <ul class="flex flex-wrap gap-4 md:gap-8 justify-end mt-3 text-sm md:text-base font-medium sm:mt-0">
             {{range .socials }}
