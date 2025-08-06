@@ -12,7 +12,6 @@ caption: Quantizaton Representative image (stablediffusionweb.com)
 featured: true
 ---
 
-## Introduction
 
 Large Language Models (LLMs) are revolutionizing AI research these days. Many tasks that once required complex models can now be solved in minutes with the help of LLMs. Not only are they generation models, but they can also tackle summarization, classification, question answering, clustering, and much more. While all these benefits are fantastic, using LLMs on your own machine can be challenging due to their size. Most LLMs require larger GPUs to run, which might be feasible for big companies but can be a stumbling block for individuals.
 

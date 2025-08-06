@@ -1,5 +1,5 @@
 ---
-title: "Understanding Recurrent Neural Networks (RNNs) for Sequential Data Processing"
+title: "RNNs for Sequential Data Processing"
 date: 2024-04-11
 tags: ["RNNs","NLP"]
 author: "Bimal Timilsina"
@@ -12,7 +12,6 @@ categories:
 - "Natural Language Processing"
 ---
 
-## Introduction
 
 You may have already worked with feedforward neural networks, these neural networks take input and after some computation in hidden layers they produce output. which works in most of the cases but when it comes with sequential data like text, sound, stock price we cannot just predict next value from only one previous inputs, we need some contexts to generate the next output which is impossible with feedforward neural networks.
 
